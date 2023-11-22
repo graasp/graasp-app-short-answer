@@ -1664,15 +1664,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/cli@npm:18.4.2":
-  version: 18.4.2
-  resolution: "@commitlint/cli@npm:18.4.2"
+"@commitlint/cli@npm:18.4.3":
+  version: 18.4.3
+  resolution: "@commitlint/cli@npm:18.4.3"
   dependencies:
-    "@commitlint/format": "npm:^18.4.0"
-    "@commitlint/lint": "npm:^18.4.2"
-    "@commitlint/load": "npm:^18.4.2"
-    "@commitlint/read": "npm:^18.4.0"
-    "@commitlint/types": "npm:^18.4.0"
+    "@commitlint/format": "npm:^18.4.3"
+    "@commitlint/lint": "npm:^18.4.3"
+    "@commitlint/load": "npm:^18.4.3"
+    "@commitlint/read": "npm:^18.4.3"
+    "@commitlint/types": "npm:^18.4.3"
     execa: "npm:^5.0.0"
     lodash.isfunction: "npm:^3.0.9"
     resolve-from: "npm:5.0.0"
@@ -1680,16 +1680,16 @@ __metadata:
     yargs: "npm:^17.0.0"
   bin:
     commitlint: cli.js
-  checksum: 85ba164a302a8c347f626487f9ad5c1d47aa8e5570732c8c7008f62873a0f512e3df86e1f590355dac77ec5c9a670a25ae19fb416f46d49f65e6038e6f914895
+  checksum: 45f469eb53484a707fe97a48784ef92af75bd831a208ccc4c1d747c9b449f3a180dcdeb29bb9f2f0a6f0691403a1021cd36a762fe2a17f4c254f25f1332f677f
   languageName: node
   linkType: hard
 
-"@commitlint/config-conventional@npm:18.4.2":
-  version: 18.4.2
-  resolution: "@commitlint/config-conventional@npm:18.4.2"
+"@commitlint/config-conventional@npm:18.4.3":
+  version: 18.4.3
+  resolution: "@commitlint/config-conventional@npm:18.4.3"
   dependencies:
     conventional-changelog-conventionalcommits: "npm:^7.0.2"
-  checksum: ed4a5c593e5519ccea93ee050c5bbaa642f43ca89b4795929b3be199402d3fd04f2f6651be58441bbbeb49b26158359c2b67d6c08fe4c64d0beb2405d2dd5052
+  checksum: bb6c1559979002e79c5e7c575f57fd713638523cdadfa61754eaabb8aad042d688c859e82ccf58589bb9aa2a4497e820702744095c9b82f6018fbb3b5d75d08d
   languageName: node
   linkType: hard
 
@@ -1724,7 +1724,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/format@npm:^18.4.0":
+"@commitlint/format@npm:^18.4.3":
   version: 18.4.3
   resolution: "@commitlint/format@npm:18.4.3"
   dependencies:
@@ -1744,7 +1744,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/lint@npm:^18.4.2":
+"@commitlint/lint@npm:^18.4.3":
   version: 18.4.3
   resolution: "@commitlint/lint@npm:18.4.3"
   dependencies:
@@ -1756,7 +1756,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/load@npm:^18.4.2":
+"@commitlint/load@npm:^18.4.3":
   version: 18.4.3
   resolution: "@commitlint/load@npm:18.4.3"
   dependencies:
@@ -1794,7 +1794,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/read@npm:^18.4.0":
+"@commitlint/read@npm:^18.4.3":
   version: 18.4.3
   resolution: "@commitlint/read@npm:18.4.3"
   dependencies:
@@ -1850,7 +1850,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/types@npm:^18.4.0, @commitlint/types@npm:^18.4.3":
+"@commitlint/types@npm:^18.4.3":
   version: 18.4.3
   resolution: "@commitlint/types@npm:18.4.3"
   dependencies:
@@ -6652,8 +6652,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "graasp-app-short-answer@workspace:."
   dependencies:
-    "@commitlint/cli": "npm:18.4.2"
-    "@commitlint/config-conventional": "npm:18.4.2"
+    "@commitlint/cli": "npm:18.4.3"
+    "@commitlint/config-conventional": "npm:18.4.3"
     "@cypress/code-coverage": "npm:3.12.10"
     "@emotion/react": "npm:11.11.1"
     "@emotion/styled": "npm:11.11.0"
