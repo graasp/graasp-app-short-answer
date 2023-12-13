@@ -7085,7 +7085,7 @@ __metadata:
     eslint-plugin-react: "npm:7.33.2"
     eslint-plugin-react-hooks: "npm:4.6.0"
     husky: "npm:8.0.3"
-    i18next: "npm:23.7.8"
+    i18next: "npm:23.7.9"
     miragejs: "npm:0.1.48"
     nock: "npm:13.3.8"
     nyc: "npm:15.1.0"
@@ -7357,12 +7357,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"i18next@npm:23.7.8":
-  version: 23.7.8
-  resolution: "i18next@npm:23.7.8"
+"i18next@npm:23.7.9":
+  version: 23.7.9
+  resolution: "i18next@npm:23.7.9"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-  checksum: 7cf6a62074b5855725f77132400344f8df4913f097d586d3199675d85c46ab85e71b02e5c8b42787d7d4c15afe32f05ece789e377bf96b35b2068f796d60f252
+  checksum: 388ee7706848c875f1ffbd8b8ec082171a8b1cae8916551e07ddff50dafdf10ca5143bc71263c098c5224a926944698cccd439c1c75174a3af85e7567625f4a5
   languageName: node
   linkType: hard
 
