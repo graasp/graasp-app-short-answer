@@ -5249,9 +5249,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@npm:13.5.1":
-  version: 13.5.1
-  resolution: "cypress@npm:13.5.1"
+"cypress@npm:13.6.2":
+  version: 13.6.2
+  resolution: "cypress@npm:13.6.2"
   dependencies:
     "@cypress/request": "npm:^3.0.0"
     "@cypress/xvfb": "npm:^1.2.4"
@@ -5298,7 +5298,7 @@ __metadata:
     yauzl: "npm:^2.10.0"
   bin:
     cypress: bin/cypress
-  checksum: 3392feb0d3f7aa7b87f2aef46065dad081b2c04fdd3baef38540df6091babb075637e350eda1ec7c2918d5eeed9eab31bebd2651b554c3e1dbaa631fea296eec
+  checksum: b6b27f94d98c873cde18a466ab3763e13ee157b78307ae3e3cf93b4fc04cbe1f616c2b7da8cc3354aed1ab2636629ce208533d70bd60cf38ad01675e19e3058d
   languageName: node
   linkType: hard
 
@@ -7070,7 +7070,7 @@ __metadata:
     "@vitejs/plugin-react": "npm:4.2.1"
     axios: "npm:0.27.2"
     concurrently: "npm:8.2.2"
-    cypress: "npm:13.5.1"
+    cypress: "npm:13.6.2"
     env-cmd: "npm:10.1.0"
     eslint: "npm:8.55.0"
     eslint-config-airbnb: "npm:19.0.4"
@@ -7087,7 +7087,7 @@ __metadata:
     husky: "npm:8.0.3"
     i18next: "npm:23.7.9"
     miragejs: "npm:0.1.48"
-    nock: "npm:13.3.8"
+    nock: "npm:13.4.0"
     nyc: "npm:15.1.0"
     prettier: "npm:3.1.1"
     react: "npm:18.2.0"
@@ -8886,14 +8886,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nock@npm:13.3.8":
-  version: 13.3.8
-  resolution: "nock@npm:13.3.8"
+"nock@npm:13.4.0":
+  version: 13.4.0
+  resolution: "nock@npm:13.4.0"
   dependencies:
     debug: "npm:^4.1.0"
     json-stringify-safe: "npm:^5.0.1"
     propagate: "npm:^2.0.0"
-  checksum: a501ac3d2f464f199372a1316f3959e7daec3ff589580d474f2b62e01a79de2cedf0b7c30e1471de93cadba1a3effd1e53cc2eda48edbf1a7ad3278895db0407
+  checksum: 269c4d4e2ae250e0af361548ab0ba11a18831cfb3edfd8c6f6b1e4b02c7ffc3b1c8ac04ac33edfd3e114110f4836ab8bb8df398da893cd18fef47d9c256acf7f
   languageName: node
   linkType: hard
 
