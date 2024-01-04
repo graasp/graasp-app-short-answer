@@ -17,7 +17,7 @@
     "@mui/icons-material": "5.14.19",
     "@mui/lab": "5.0.0-alpha.156",
     "@mui/material": "5.14.20",
-    "@sentry/react": "7.80.1",
+    "@sentry/react": "7.92.0",
     "@tanstack/react-query": "4.36.1",
     "@tanstack/react-query-devtools": "4.36.1",
     "@types/node": "20.9.5",
