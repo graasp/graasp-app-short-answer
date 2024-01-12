@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material';
+import { Box, TextField, Typography } from '@mui/material';
 
 import { useLocalContext } from '@graasp/apps-query-client';
 
@@ -16,6 +16,7 @@ const PlayerView = (): JSX.Element => {
       <Box p={2}>
         <Typography>Members</Typography>
         <pre>{JSON.stringify(members, null, 2)}</pre>
+          <TextField />
       </Box>
     </div>
   );
