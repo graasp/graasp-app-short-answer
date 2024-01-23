@@ -1,5 +1,39 @@
 {
   "translations": {
-    "Welcome to the Graasp App Starter Kit": "Welcome to the Graasp App Starter Kit"
+    "Welcome to the Graasp App Starter Kit": "Welcome to the Graasp App Starter Kit",
+    "Answers": "Answers",
+    "MCQ": {
+      "SUBMIT_OK_TOOLTIP": "Your answer has been submitted.",
+      "SUBMIT_OK_HELPER": "Submitted",
+      "RESET_ANSWER": "Reset your answer."
+    },
+    "ANSWERS": {
+      "TITLE": "Answers",
+      "TABLE": {
+        "MEMBER_HEAD": "Member",
+        "KEY_HEAD": "Key",
+        "LABEL_HEAD": "Answer"
+      }
+    },
+    "SETTINGS": {
+      "TITLE": "Settings",
+      "SAVE_BTN": "Save",
+      "QUESTION": {
+        "TITLE": "Question"
+      },
+      "ANSWER": {
+        "TITLE": "Answer",
+        "INPUT": {
+          "KEY_HELP_WARNING": "Please, provide a key.",
+          "KEY_HELP_ERROR": "Please, make sure each key is unique.",
+          "KEY_LABEL": "Key",
+          "VALUE_LABEL": "Value",
+          "ANSWER_LABEL": "Answer"
+        }
+      },
+      "GENERAL": {
+        "TITLE": "General"
+      }
+    }
   }
 }
