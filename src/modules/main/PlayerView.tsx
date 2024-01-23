@@ -1,14 +1,15 @@
-import { ChangeEvent, useEffect, useMemo, useState } from 'react';
+import { ChangeEvent, useMemo, useState } from 'react';
 
-import { Box, Button, Grid, TextField, Typography } from '@mui/material';
+import { Box, Grid, TextField } from '@mui/material';
 
-import { Data, useLocalContext } from '@graasp/apps-query-client';
+import { useLocalContext } from '@graasp/apps-query-client';
 import { AppData } from '@graasp/sdk';
 
 import isEqual from 'lodash.isequal';
 
 import { hooks, mutations } from '@/config/queryClient';
 import { PLAYER_VIEW_CY } from '@/config/selectors';
+import { UserAnswer } from '@/interfaces/userAnswer';
 import SubmitButton from '@/modules/common/SubmitButton';
 
 function isAnswer(appData: AppData): boolean {
@@ -17,24 +18,20 @@ function isAnswer(appData: AppData): boolean {
 
 const PlayerView = (): JSX.Element => {
   const { permission } = useLocalContext();
-  const { data: appContext } = hooks.useAppContext();
   const { data: appData } = hooks.useAppData();
   const { mutate: postAppData } = mutations.usePostAppData();
 
   // use effect to get required app data
   let savedAnswer = '';
 
-  const [answer, setAnswer] = useState<string>(savedAnswer);
-
-  useEffect(() => {
-    if (appData) {
-      const savedAnswerObject = appData?.find(isAnswer);
-      if (savedAnswerObject) {
-        savedAnswer = savedAnswerObject.data.answer;
-        setAnswer(savedAnswer);
-      }
+  if (appData) {
+    const savedAnswerObject = appData?.find(isAnswer) as AppData<UserAnswer>;
+    if (savedAnswerObject) {
+      savedAnswer = savedAnswerObject.data.answer ?? '';
     }
-  }, [appData]);
+  }
+
+  const [answer, setAnswer] = useState<string>(savedAnswer);
 
   const disableSave = useMemo(() => {
     if (isEqual(savedAnswer, answer)) {
