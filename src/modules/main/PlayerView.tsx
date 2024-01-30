@@ -59,7 +59,7 @@ const PlayerView = (): JSX.Element => {
       return t('SAVE_BUTTON');
     }
     return t('SAVED_MESSAGE');
-  }, [permission]);
+  }, [permission, t]);
 
   const handleChangeAnswer = (event: ChangeEvent<HTMLInputElement>): void => {
     const { value } = event.target;
