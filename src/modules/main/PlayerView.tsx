@@ -1,23 +1,32 @@
 import { ChangeEvent, useMemo, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
-import { Box, Grid, TextField } from '@mui/material';
+import { Box, Grid, TextField, Typography } from '@mui/material';
 
 import { useLocalContext } from '@graasp/apps-query-client';
-import { AppData } from '@graasp/sdk';
+import { AppData, PermissionLevel } from '@graasp/sdk';
 
 import isEqual from 'lodash.isequal';
+import sortBy from 'lodash.sortby';
 
+import { AppDataType } from '@/config/appData';
 import { hooks, mutations } from '@/config/queryClient';
 import { PLAYER_VIEW_CY } from '@/config/selectors';
 import { UserAnswer } from '@/interfaces/userAnswer';
 import SubmitButton from '@/modules/common/SubmitButton';
+import { useSettings } from '@/modules/context/SettingsContext';
 
 function isAnswer(appData: AppData): boolean {
-  return appData.type === 'answer';
+  return appData.type === AppDataType.UserAnswer;
 }
 
 const PlayerView = (): JSX.Element => {
+  const { t } = useTranslation('translations', { keyPrefix: 'PLAYER' });
   const { permission } = useLocalContext();
+  const {
+    question,
+    // answer: answerSavedState,
+  } = useSettings();
   const { data: appData } = hooks.useAppData();
   const { mutate: postAppData } = mutations.usePostAppData();
 
@@ -25,7 +34,10 @@ const PlayerView = (): JSX.Element => {
   let savedAnswer = '';
 
   if (appData) {
-    const savedAnswerObject = appData?.find(isAnswer) as AppData<UserAnswer>;
+    // only show the last answer
+    const savedAnswerObject = sortBy(appData, ['createdAt'])
+      .reverse()
+      .find(isAnswer) as AppData<UserAnswer>;
     if (savedAnswerObject) {
       savedAnswer = savedAnswerObject.data.answer ?? '';
     }
@@ -34,11 +46,20 @@ const PlayerView = (): JSX.Element => {
   const [answer, setAnswer] = useState<string>(savedAnswer);
 
   const disableSave = useMemo(() => {
-    if (isEqual(savedAnswer, answer)) {
+    // disable if permission is read
+    if (permission === PermissionLevel.Read) {
       return true;
     }
-    return false;
-  }, [answer, savedAnswer]);
+    // disable if answer is equal
+    return isEqual(savedAnswer, answer);
+  }, [answer, savedAnswer, permission]);
+
+  const disabledMessage = useMemo(() => {
+    if (permission === PermissionLevel.Read) {
+      return t('SAVE_BUTTON');
+    }
+    return t('SAVED_MESSAGE');
+  }, [permission]);
 
   const handleChangeAnswer = (event: ChangeEvent<HTMLInputElement>): void => {
     const { value } = event.target;
@@ -46,21 +67,31 @@ const PlayerView = (): JSX.Element => {
   };
 
   const handleSubmitAnswer = (): void => {
-    postAppData({ data: { answer }, type: 'answer', visibility: 'member' });
+    postAppData({
+      data: { answer },
+      type: AppDataType.UserAnswer,
+      visibility: 'member',
+    });
   };
 
   return (
     <div data-cy={PLAYER_VIEW_CY}>
-      Player as {permission}
-      <Box p={2} sx={{ mb: 20 }}>
-        <pre>{JSON.stringify(appData, null, 2)}</pre>
-        <Grid container spacing={2} alignItems="center">
-          <Grid item xs={8}>
+      <Box p={2}>
+        <Typography variant="h5" gutterBottom>
+          {question?.content}
+        </Typography>
+        <Grid
+          container
+          spacing={2}
+          alignItems="center"
+          justifyContent="space-around"
+        >
+          <Grid item xs={9} sm={10}>
             <TextField fullWidth value={answer} onChange={handleChangeAnswer} />
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={3} sm={2}>
             <SubmitButton disabled={disableSave} handler={handleSubmitAnswer}>
-              Submit
+              {disableSave ? disabledMessage : t('SAVE_BUTTON')}
             </SubmitButton>
           </Grid>
         </Grid>

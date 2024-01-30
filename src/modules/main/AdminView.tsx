@@ -24,7 +24,7 @@ enum Tabs {
 
 const AdminView = (): JSX.Element => {
   const { t } = useTranslation();
-  const [activeTab, setActiveTab] = useState(Tabs.SETTINGS_VIEW);
+  const [activeTab, setActiveTab] = useState(Tabs.TABLE_VIEW);
 
   return (
     <Box data-cy={ADMIN_VIEW_CY}>
@@ -36,26 +36,25 @@ const AdminView = (): JSX.Element => {
           centered
         >
           <Tab
+            data-cy={TAB_TABLE_VIEW_CY}
+            value={Tabs.TABLE_VIEW}
+            label={t('ANSWERS.TITLE')}
+            icon={<TableViewIcon />}
+            iconPosition="start"
+          />
+          <Tab
             data-cy={TAB_SETTINGS_VIEW_CY}
             value={Tabs.SETTINGS_VIEW}
             label={t('SETTINGS.TITLE')}
             icon={<SettingsApplicationsIcon />}
             iconPosition="start"
           />
-
-          <Tab
-            data-cy={TAB_TABLE_VIEW_CY}
-            value={Tabs.TABLE_VIEW}
-            label={t('Answers')}
-            icon={<TableViewIcon />}
-            iconPosition="start"
-          />
         </TabList>
-        <TabPanel value={Tabs.SETTINGS_VIEW} data-cy={SETTINGS_VIEW_PANE_CY}>
-          <SettingsView />
-        </TabPanel>
         <TabPanel value={Tabs.TABLE_VIEW} data-cy={TABLE_VIEW_PANE_CY}>
           <AnswersView />
+        </TabPanel>
+        <TabPanel value={Tabs.SETTINGS_VIEW} data-cy={SETTINGS_VIEW_PANE_CY}>
+          <SettingsView />
         </TabPanel>
       </TabContext>
     </Box>

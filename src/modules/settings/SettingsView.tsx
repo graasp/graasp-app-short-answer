@@ -50,7 +50,7 @@ const SettingsView: FC = () => {
 
   return (
     <Stack data-cy={SETTINGS_VIEW_CY} spacing={2}>
-      <Typography variant="h1">{t('SETTINGS.TITLE')}</Typography>
+      <Typography variant="h3">{t('SETTINGS.TITLE')}</Typography>
       <QuestionSettingsComponent
         question={question}
         onChange={(newSetting: QuestionSettingsType) => {

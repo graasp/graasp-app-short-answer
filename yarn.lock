@@ -3281,6 +3281,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/lodash.sortby@npm:^4":
+  version: 4.7.9
+  resolution: "@types/lodash.sortby@npm:4.7.9"
+  dependencies:
+    "@types/lodash": "npm:*"
+  checksum: b5f0159d51ff2928b9d54ab8ed5f95be8d4d4d7ff24a46eef24654e5523ec3e9b371125ed9a24e9e88abb4a337bbff05379a51c3c174ca424d68714151cbe158
+  languageName: node
+  linkType: hard
+
+"@types/lodash.uniqby@npm:^4":
+  version: 4.7.9
+  resolution: "@types/lodash.uniqby@npm:4.7.9"
+  dependencies:
+    "@types/lodash": "npm:*"
+  checksum: 24cc8af36e0d4c52b7294c7ba7d814c89ce2c8118d94350bbed21031fef850fa1a280bfd2b30a47e0b5f7aa6ac649a36a5089aa76bc23787963a5ee6443f631e
+  languageName: node
+  linkType: hard
+
 "@types/lodash@npm:*":
   version: 4.14.202
   resolution: "@types/lodash@npm:4.14.202"
@@ -6699,6 +6717,8 @@ __metadata:
     "@trivago/prettier-plugin-sort-imports": "npm:4.3.0"
     "@types/i18n": "npm:0.13.10"
     "@types/lodash.isequal": "npm:^4"
+    "@types/lodash.sortby": "npm:^4"
+    "@types/lodash.uniqby": "npm:^4"
     "@types/node": "npm:20.10.4"
     "@types/react": "npm:18.2.42"
     "@types/react-dom": "npm:18.2.17"
@@ -6725,6 +6745,8 @@ __metadata:
     husky: "npm:8.0.3"
     i18next: "npm:23.7.11"
     lodash.isequal: "npm:4.5.0"
+    lodash.sortby: "npm:4.7.0"
+    lodash.uniqby: "npm:4.7.0"
     miragejs: "npm:0.1.48"
     nock: "npm:13.4.0"
     nyc: "npm:15.1.0"
@@ -8023,6 +8045,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.sortby@npm:4.7.0":
+  version: 4.7.0
+  resolution: "lodash.sortby@npm:4.7.0"
+  checksum: 38df19ae28608af2c50ac342fc1f414508309d53e1d58ed9adfb2c3cd17c3af290058c0a0478028d932c5404df3d53349d19fa364ef6bed6145a6bc21320399e
+  languageName: node
+  linkType: hard
+
 "lodash.startcase@npm:^4.4.0":
   version: 4.4.0
   resolution: "lodash.startcase@npm:4.4.0"
@@ -8041,6 +8070,13 @@ __metadata:
   version: 4.5.0
   resolution: "lodash.uniq@npm:4.5.0"
   checksum: 86246ca64ac0755c612e5df6d93cfe92f9ecac2e5ff054b965efbbb1d9a647b6310969e78545006f70f52760554b03233ad0103324121ae31474c20d5f7a2812
+  languageName: node
+  linkType: hard
+
+"lodash.uniqby@npm:4.7.0":
+  version: 4.7.0
+  resolution: "lodash.uniqby@npm:4.7.0"
+  checksum: 256616bd1bd6be84d8a5eceb61338a0ab8d8b34314ba7bfd5f0de35227d0e2c1e659c61ff4ac31eba6a664085cc7e397bc34c3534fba208102db660a4f98f211
   languageName: node
   linkType: hard
 

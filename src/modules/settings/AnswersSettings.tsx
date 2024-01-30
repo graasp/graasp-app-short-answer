@@ -18,7 +18,7 @@ const AnswerSettings: FC<PropTypes> = ({ answer, onChange }) => {
   const { content: answerContent } = answer;
   return (
     <Stack spacing={1}>
-      <Typography variant="h2">{t('SETTINGS.ANSWER.TITLE')}</Typography>
+      <Typography variant="h4">{t('SETTINGS.ANSWER.TITLE')}</Typography>
       <TextField
         inputProps={{
           'data-cy': SETTINGS_ANSWER_TEXT_FIELD_CY,

@@ -1,18 +1,16 @@
 {
   "translations": {
-    "Welcome to the Graasp App Starter Kit": "Welcome to the Graasp App Starter Kit",
-    "Answers": "Answers",
-    "MCQ": {
-      "SUBMIT_OK_TOOLTIP": "Your answer has been submitted.",
-      "SUBMIT_OK_HELPER": "Submitted",
-      "RESET_ANSWER": "Reset your answer."
-    },
     "ANSWERS": {
       "TITLE": "Answers",
       "TABLE": {
         "MEMBER_HEAD": "Member",
-        "KEY_HEAD": "Key",
-        "LABEL_HEAD": "Answer"
+        "LABEL_HEAD": "Answer",
+        "CORRECT_HEAD": "Correct",
+        "TOOLTIP":  {
+          "CORRECT": "This answer is correct.",
+          "INCORRECT": "This answer is incorrect.",
+          "UNDEFINED": "No answer has been defined in the settings."
+        }
       }
     },
     "SETTINGS": {
@@ -34,6 +32,10 @@
       "GENERAL": {
         "TITLE": "General"
       }
+    },
+    "PLAYER": {
+      "SAVED_MESSAGE": "Saved",
+      "SAVE_BUTTON": "Save"
     }
   }
 }

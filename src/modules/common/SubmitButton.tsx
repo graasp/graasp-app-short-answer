@@ -16,6 +16,7 @@ const SubmitButton = ({
   <Button
     variant="contained"
     size="large"
+    fullWidth
     onClick={handler}
     disabled={disabled}
   >

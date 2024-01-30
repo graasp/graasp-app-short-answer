@@ -11,6 +11,9 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Typography from '@mui/material/Typography';
 
+import sortBy from 'lodash.sortby';
+import uniqBy from 'lodash.uniqby';
+
 import useUserAnswers from '@/hooks/useUserAnswers';
 
 import UserAnswerRow from './UserAnswerRow';
@@ -18,6 +21,7 @@ import UserAnswerRow from './UserAnswerRow';
 const AnswersView: FC = () => {
   const { t } = useTranslation('translations', { keyPrefix: 'ANSWERS' });
   const { allAnswersAppData } = useUserAnswers();
+
   return (
     <Stack spacing={2}>
       <Typography variant="h1">{t('TITLE')}</Typography>
@@ -26,13 +30,17 @@ const AnswersView: FC = () => {
           <TableHead>
             <TableRow>
               <TableCell>{t('TABLE.MEMBER_HEAD')}</TableCell>
-              <TableCell>{t('TABLE.KEY_HEAD')}</TableCell>
               <TableCell>{t('TABLE.LABEL_HEAD')}</TableCell>
+              <TableCell>{t('TABLE.CORRECT_HEAD')}</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {allAnswersAppData &&
-              allAnswersAppData.map((userAnswerAppData, index) => (
+              // only show the last answer for each user
+              uniqBy(
+                sortBy(allAnswersAppData, ['createdAt']).reverse(),
+                'creator.id',
+              ).map((userAnswerAppData, index) => (
                 <UserAnswerRow
                   key={index}
                   userAnswerAppData={userAnswerAppData}
