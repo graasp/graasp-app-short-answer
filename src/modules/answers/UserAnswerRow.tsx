@@ -9,11 +9,18 @@ import TableCell from '@mui/material/TableCell';
 import TableRow from '@mui/material/TableRow';
 
 import { UserAnswerAppData } from '@/config/appData';
+import {
+  makeUserAnswerAnswerCellCy,
+  makeUserAnswerCorrectCellCy,
+  makeUserAnswerMemberCellCy,
+  makeUserAnswerRowCy,
+} from '@/config/selectors';
 import { useSettings } from '@/modules/context/SettingsContext';
 
 const UserAnswerRow: FC<{
+  key: number;
   userAnswerAppData: UserAnswerAppData;
-}> = ({ userAnswerAppData }) => {
+}> = ({ key, userAnswerAppData }) => {
   const { t } = useTranslation('translations', { keyPrefix: 'ANSWERS' });
   const { answer = '—' } = userAnswerAppData.data;
   const { answer: correctAnswer } = useSettings();
@@ -30,11 +37,17 @@ const UserAnswerRow: FC<{
       </Tooltip>
     );
 
+  const rowId = userAnswerAppData.creator?.id || key;
+
   return (
-    <TableRow>
-      <TableCell>{userAnswerAppData.creator?.name}</TableCell>
-      <TableCell>{answer}</TableCell>
-      <TableCell>
+    <TableRow data-cy={makeUserAnswerRowCy(rowId)}>
+      <TableCell data-cy={makeUserAnswerMemberCellCy(rowId)}>
+        {userAnswerAppData.creator?.name}
+      </TableCell>
+      <TableCell data-cy={makeUserAnswerAnswerCellCy(rowId)}>
+        {answer}
+      </TableCell>
+      <TableCell data-cy={makeUserAnswerCorrectCellCy(rowId)}>
         {hasAnswer ? (
           <Tooltip title={t('TABLE.TOOLTIP.UNDEFINED')}>
             <QuestionMarkIcon color="warning" />

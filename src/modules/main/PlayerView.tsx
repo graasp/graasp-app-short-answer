@@ -11,7 +11,7 @@ import sortBy from 'lodash.sortby';
 
 import { AppDataType } from '@/config/appData';
 import { hooks, mutations } from '@/config/queryClient';
-import { PLAYER_VIEW_CY } from '@/config/selectors';
+import { ANSWER_CY, PLAYER_VIEW_CY, QUESTION_CY } from '@/config/selectors';
 import { UserAnswer } from '@/interfaces/userAnswer';
 import SubmitButton from '@/modules/common/SubmitButton';
 import { useSettings } from '@/modules/context/SettingsContext';
@@ -77,7 +77,7 @@ const PlayerView = (): JSX.Element => {
   return (
     <div data-cy={PLAYER_VIEW_CY}>
       <Box p={2}>
-        <Typography variant="h5" gutterBottom>
+        <Typography data-cy={QUESTION_CY} variant="h5" gutterBottom>
           {question?.content}
         </Typography>
         <Grid
@@ -87,7 +87,14 @@ const PlayerView = (): JSX.Element => {
           justifyContent="space-around"
         >
           <Grid item xs={9} sm={10}>
-            <TextField fullWidth value={answer} onChange={handleChangeAnswer} />
+            <TextField
+              inputProps={{
+                'data-cy': ANSWER_CY,
+              }}
+              fullWidth
+              value={answer}
+              onChange={handleChangeAnswer}
+            />
           </Grid>
           <Grid item xs={3} sm={2}>
             <SubmitButton disabled={disableSave} handler={handleSubmitAnswer}>

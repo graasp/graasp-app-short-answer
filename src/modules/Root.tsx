@@ -11,6 +11,7 @@ import {
   GraaspContextDevTool,
   WithLocalContext,
   WithTokenContext,
+  useObjectState,
 } from '@graasp/apps-query-client';
 
 import i18nConfig from '@/config/i18n';
@@ -22,7 +23,6 @@ import {
 } from '@/config/queryClient';
 import { defaultMockContext, mockMembers } from '@/mocks/db';
 import Loader from '@/modules/common/Loader';
-import { useObjectState } from '@/utils/hooks';
 
 import App from './main/App';
 
