@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/graasp/graasp-app-short-answer/compare/v1.0.0...v1.0.1) (2024-02-20)
+
+
+### Bug Fixes
+
+* disable save on anonymous not read ([2227183](https://github.com/graasp/graasp-app-short-answer/commit/22271835d0afed1af0d62851b8bf725d48624ee5))
+
 ## 1.0.0 (2024-02-06)
 
 
