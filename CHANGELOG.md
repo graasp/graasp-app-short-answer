@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/graasp/graasp-app-short-answer/compare/v1.0.1...v1.0.2) (2024-02-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @types/node to v20.11.19 ([#15](https://github.com/graasp/graasp-app-short-answer/issues/15)) ([0452811](https://github.com/graasp/graasp-app-short-answer/commit/0452811ca92536f00bad1e7ef34ea418a0d90cfb))
+
 ## [1.0.1](https://github.com/graasp/graasp-app-short-answer/compare/v1.0.0...v1.0.1) (2024-02-20)
 
 
