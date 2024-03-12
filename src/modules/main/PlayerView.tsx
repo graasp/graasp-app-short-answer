@@ -30,7 +30,7 @@ const PlayerView = (): JSX.Element => {
   const { data: appData } = hooks.useAppData();
   const { mutate: postAppData } = mutations.usePostAppData();
 
-  const [answer, setAnswer] = useState<string>();
+  const [answer, setAnswer] = useState<string>('');
   const [savedAnswer, setSavedAnswer] = useState<string>('');
 
   // use effect to get required app data
