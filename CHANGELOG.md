@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.0.3](https://github.com/graasp/graasp-app-short-answer/compare/v1.0.2...v1.0.3) (2024-03-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @types/node to v20.11.20 ([13c4b0e](https://github.com/graasp/graasp-app-short-answer/commit/13c4b0e8734cb17f12adcd8c735a54fc892c7a81))
+* **deps:** update mui (non-major) ([e12f936](https://github.com/graasp/graasp-app-short-answer/commit/e12f936672e86c7d31516016432d6a9ff61ad01b))
+* **deps:** update react monorepo ([da5a891](https://github.com/graasp/graasp-app-short-answer/commit/da5a89137e3d1c8b04996ed58a3753d7e24c29bd))
+* settings title, helper text, and saved data ([#75](https://github.com/graasp/graasp-app-short-answer/issues/75)) ([48a70ad](https://github.com/graasp/graasp-app-short-answer/commit/48a70adab199265eba5ab034fa5d13331ef49f7f))
+* update i18n config to use fallback language ([85e9085](https://github.com/graasp/graasp-app-short-answer/commit/85e9085723d4d41e378a598dd076dc64b42e23d5))
+
 ## [1.0.2](https://github.com/graasp/graasp-app-short-answer/compare/v1.0.1...v1.0.2) (2024-02-20)
 
 
