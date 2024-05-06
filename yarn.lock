@@ -2113,9 +2113,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cypress/code-coverage@npm:3.12.24":
-  version: 3.12.24
-  resolution: "@cypress/code-coverage@npm:3.12.24"
+"@cypress/code-coverage@npm:3.12.38":
+  version: 3.12.38
+  resolution: "@cypress/code-coverage@npm:3.12.38"
   dependencies:
     "@cypress/webpack-preprocessor": "npm:^6.0.0"
     chalk: "npm:4.1.2"
@@ -2132,7 +2132,7 @@ __metadata:
     babel-loader: ^8.3 || ^9
     cypress: "*"
     webpack: ^4 || ^5
-  checksum: 10/e5b52ee8056810c8c4f98388c7abcd71bde6b0a028e7c17091ed8fabd5088e47b1bf70a3575160b42387f2dd9ba797488860b507c2c21acee8dc143e81b3f1a3
+  checksum: 10/9ab38647496a70ffc39448ff19d627fa05d8bffee98f3bdb50b8efec402a84757347f8547c6d8992921eb149e4c638cc76d237d9b60cd9229b36d4b5e395e089
   languageName: node
   linkType: hard
 
@@ -4156,10 +4156,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/i18n@npm:0.13.10":
-  version: 0.13.10
-  resolution: "@types/i18n@npm:0.13.10"
-  checksum: 10/4b6c84536bf891d07fb1b1daf2e8d66889d0c317dc3c2b653d65a922ee3df3cef93b811b71e46dfb6483a95beb1515a7c82bf3f0fb05d54084ac519ff93f706d
+"@types/i18n@npm:0.13.12":
+  version: 0.13.12
+  resolution: "@types/i18n@npm:0.13.12"
+  checksum: 10/37fafabce4973ac0be008c5401bd159397dbaa2dab720323d1624a0580c1dce3416186981417c7d6558b90dd44947ccdb2ec4da663894ffba57a6239a5d4f4d2
   languageName: node
   linkType: hard
 
@@ -8377,7 +8377,7 @@ __metadata:
   dependencies:
     "@commitlint/cli": "npm:18.6.1"
     "@commitlint/config-conventional": "npm:18.6.3"
-    "@cypress/code-coverage": "npm:3.12.24"
+    "@cypress/code-coverage": "npm:3.12.38"
     "@emotion/react": "npm:11.11.3"
     "@emotion/styled": "npm:11.11.0"
     "@graasp/apps-query-client": "npm:3.4.4"
@@ -8390,7 +8390,7 @@ __metadata:
     "@tanstack/react-query": "npm:4.36.1"
     "@tanstack/react-query-devtools": "npm:4.36.1"
     "@trivago/prettier-plugin-sort-imports": "npm:4.3.0"
-    "@types/i18n": "npm:0.13.10"
+    "@types/i18n": "npm:0.13.12"
     "@types/lodash.isequal": "npm:^4"
     "@types/lodash.sortby": "npm:^4"
     "@types/lodash.uniqby": "npm:^4"
