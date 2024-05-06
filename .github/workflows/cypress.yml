@@ -2,6 +2,7 @@ name: Cypress UI tests
 
 on:
   push:
+  merge-group:
 
 jobs:
   cypress-run:
