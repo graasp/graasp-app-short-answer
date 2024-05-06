@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.0.4](https://github.com/graasp/graasp-app-short-answer/compare/v1.0.3...v1.0.4) (2024-05-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @graasp/ui to v4.17.1 ([6ba85e5](https://github.com/graasp/graasp-app-short-answer/commit/6ba85e5272bec412fe2bd6db83b950055536b1fb))
+* **deps:** update dependency @sentry/react to v7.113.0 ([9c28075](https://github.com/graasp/graasp-app-short-answer/commit/9c2807506f97b67335c53484db8e15b0eac927d2))
+* **deps:** update dependency i18next to v23.11.3 ([7297a8d](https://github.com/graasp/graasp-app-short-answer/commit/7297a8d30c464e6ff347edb05fc85e221bd62814))
+* make background transparent ([8624e95](https://github.com/graasp/graasp-app-short-answer/commit/8624e9565c279f03660f1e5e5cbd72dd304d52e9))
+
 ## [1.0.3](https://github.com/graasp/graasp-app-short-answer/compare/v1.0.2...v1.0.3) (2024-03-13)
 
 
