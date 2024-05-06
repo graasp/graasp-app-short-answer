@@ -2,7 +2,7 @@ name: Build and Check
 
 on:
   push:
-  merge-group:
+  merge_group:
 
 jobs:
   build:
