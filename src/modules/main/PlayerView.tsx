@@ -1,13 +1,10 @@
 import { PLAYER_VIEW_CY } from '@/config/selectors';
 
-import { UserAnswersProvider } from '../context/UserAnswersContext';
 import QuestionView from '../question-view/QuestionView';
 
 const PlayerView = (): JSX.Element => (
   <div data-cy={PLAYER_VIEW_CY}>
-    <UserAnswersProvider>
-      <QuestionView />
-    </UserAnswersProvider>
+    <QuestionView />
   </div>
 );
 export default PlayerView;
