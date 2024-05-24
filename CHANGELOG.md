@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.0.5](https://github.com/graasp/graasp-app-short-answer/compare/v1.0.4...v1.0.5) (2024-05-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @types/node to v20.11.30 ([09cd81a](https://github.com/graasp/graasp-app-short-answer/commit/09cd81a09fd698c13de25c38ce60a4a7d27e7964))
+* **deps:** update dependency @types/node to v20.12.12 ([50eb6e1](https://github.com/graasp/graasp-app-short-answer/commit/50eb6e104d99a813b2030d5fdf9d9880e9c84d03))
+* **deps:** update dependency i18next to v23.11.5 ([0d73768](https://github.com/graasp/graasp-app-short-answer/commit/0d7376868ac0b72f47fa11ebe8b5ac6d04b78582))
+* **deps:** update dependency typescript to v5.4.5 ([5f0fd6a](https://github.com/graasp/graasp-app-short-answer/commit/5f0fd6ab7fac8445e2e5cb988bcd22057cf61e85))
+* **deps:** update emotion monorepo ([5c1a2f3](https://github.com/graasp/graasp-app-short-answer/commit/5c1a2f3490213d870f179f43648fa45f90192863))
+* **deps:** update mui (non-major) ([7a92b4f](https://github.com/graasp/graasp-app-short-answer/commit/7a92b4fb59278f44648718e006d31c5163371a62))
+* **deps:** update react monorepo ([da94250](https://github.com/graasp/graasp-app-short-answer/commit/da94250d70c813b8aabcf67151e231f9a65441e6))
+
 ## [1.0.4](https://github.com/graasp/graasp-app-short-answer/compare/v1.0.3...v1.0.4) (2024-05-06)
 
 
