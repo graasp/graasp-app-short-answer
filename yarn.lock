@@ -3932,7 +3932,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash.debounce@npm:^4":
+"@types/lodash.debounce@npm:4.0.9":
   version: 4.0.9
   resolution: "@types/lodash.debounce@npm:4.0.9"
   dependencies:
@@ -8228,7 +8228,7 @@ __metadata:
     "@tanstack/react-query-devtools": "npm:4.36.1"
     "@trivago/prettier-plugin-sort-imports": "npm:4.3.0"
     "@types/i18n": "npm:0.13.12"
-    "@types/lodash.debounce": "npm:^4"
+    "@types/lodash.debounce": "npm:4.0.9"
     "@types/lodash.isequal": "npm:^4"
     "@types/lodash.sortby": "npm:^4"
     "@types/lodash.uniqby": "npm:^4"
