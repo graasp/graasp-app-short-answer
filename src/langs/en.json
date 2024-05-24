@@ -1,5 +1,6 @@
 {
   "translations": {
+    "VERSION": "Version {{version}}",
     "ANSWERS": {
       "TITLE": "Answers",
       "TABLE": {
@@ -31,7 +32,10 @@
         "HELPER_TEXT": "[Optional] If there is one correct answer, then you can include it here and you can automatically see who submitted a correct answer."
       },
       "GENERAL": {
-        "TITLE": "General"
+        "TITLE": "General",
+        "REQUIRED_SWITCH_LABEL": "Mark the question as required.",
+        "AUTOSUBMIT_SWITCH_LABEL": "Submit the answer automatically",
+        "AUTOSUBMIT_MORE_INFO": "If this option is not enabled, the users will have to click on a submit button to send his or her answer."
       }
     },
     "PLAYER": {

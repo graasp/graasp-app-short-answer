@@ -1,6 +1,10 @@
 import { FC, ReactElement, createContext, useContext } from 'react';
 
-import { AnswerSettings, QuestionSettingsType } from '@/config/appSettings';
+import {
+  AnswerSettings,
+  GeneralSettings,
+  QuestionSettingsType,
+} from '@/config/appSettings';
 import { hooks, mutations } from '@/config/queryClient';
 
 import Loader from '../common/Loader';
@@ -10,6 +14,7 @@ import Loader from '../common/Loader';
 type AllSettingsType = {
   question: QuestionSettingsType;
   answer: AnswerSettings;
+  general: GeneralSettings;
 };
 
 // default values for the data property of settings by name
@@ -20,6 +25,10 @@ const defaultSettingsValues: AllSettingsType = {
   answer: {
     content: '',
   },
+  general: {
+    required: false,
+    autosubmit: false,
+  },
 };
 
 // list of the settings names
@@ -27,6 +36,7 @@ const ALL_SETTING_NAMES = [
   // name of your settings
   'question',
   'answer',
+  'general',
 ] as const;
 
 // automatically generated types
