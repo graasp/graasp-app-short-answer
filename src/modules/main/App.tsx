@@ -7,6 +7,7 @@ import { DEFAULT_LANG } from '@/config/constants';
 
 import i18n from '../../config/i18n';
 import { SettingsProvider } from '../context/SettingsContext';
+import { UserAnswersProvider } from '../context/UserAnswersContext';
 import BuilderView from './BuilderView';
 import PlayerView from './PlayerView';
 
@@ -32,7 +33,11 @@ const App = (): JSX.Element => {
     }
   };
 
-  return <SettingsProvider>{renderContent()}</SettingsProvider>;
+  return (
+    <SettingsProvider>
+      <UserAnswersProvider>{renderContent()}</UserAnswersProvider>
+    </SettingsProvider>
+  );
 };
 
 export default App;

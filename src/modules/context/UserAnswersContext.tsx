@@ -5,12 +5,14 @@ import {
   useContext,
   useEffect,
   useMemo,
+  useRef,
   useState,
 } from 'react';
 
 import { useLocalContext } from '@graasp/apps-query-client';
 import { AppData, PermissionLevel, PermissionLevelCompare } from '@graasp/sdk';
 
+import debounce from 'lodash.debounce';
 import sortBy from 'lodash.sortby';
 
 import {
@@ -50,6 +52,8 @@ export const UserAnswersProvider: FC<{
     useState<UserAnswerAppData>();
   const [allAnswersAppData, setAllAnswersAppData] =
     useState<UserAnswerAppData[]>();
+
+  const cachePayload = useRef<UserAnswer>();
   const { mutate: postAppData } = mutations.usePostAppData();
   const { mutate: patchAppData } = mutations.usePatchAppData();
   const { mutate: deleteAppData } = mutations.useDeleteAppData();
@@ -86,10 +90,15 @@ export const UserAnswersProvider: FC<{
             : UserAnswerStatus.Saved,
         };
         if (userAnswerAppData?.id) {
-          patchAppData({
-            ...userAnswerAppData,
-            data: payloadData,
-          });
+          cachePayload.current = payloadData;
+          debounce(
+            () =>
+              patchAppData({
+                ...userAnswerAppData,
+                data: cachePayload.current,
+              }),
+            500,
+          );
         } else {
           postAppData(getDefaultUserAnswerAppData(payloadData));
         }
