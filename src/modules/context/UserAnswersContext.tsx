@@ -2,6 +2,7 @@ import {
   FC,
   ReactElement,
   createContext,
+  useCallback,
   useContext,
   useEffect,
   useMemo,
@@ -20,6 +21,7 @@ import {
   UserAnswerAppData,
   getDefaultUserAnswerAppData,
 } from '@/config/appData';
+import { DEBOUNCE_SAVE_MS } from '@/config/constants';
 import { hooks, mutations } from '@/config/queryClient';
 import { UserAnswer, UserAnswerStatus } from '@/interfaces/userAnswer';
 
@@ -54,7 +56,7 @@ export const UserAnswersProvider: FC<{
     useState<UserAnswerAppData[]>();
 
   const cachePayload = useRef<UserAnswer>();
-  const debouncedPatch = useRef<ReturnType<typeof debounce>>();
+  // const debouncedPatch = useRef<ReturnType<typeof debounce>>();
   const { mutate: postAppData } = mutations.usePostAppData();
   const { mutate: patchAppData } = mutations.usePatchAppData();
   const { mutate: deleteAppData } = mutations.useDeleteAppData();
@@ -81,6 +83,14 @@ export const UserAnswersProvider: FC<{
     }
   }, [isSuccess, data, memberId]);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const patchCachedUserAnswer = useCallback(
+    debounce((payload) => {
+      patchAppData(payload);
+    }, DEBOUNCE_SAVE_MS),
+    [patchAppData],
+  );
+
   const setAnswer = useMemo(
     () =>
       (answer: string): void => {
@@ -91,20 +101,17 @@ export const UserAnswersProvider: FC<{
             : UserAnswerStatus.Saved,
         };
         if (userAnswerAppData?.id) {
+          // Eventually useless
           cachePayload.current = payloadData;
-          debouncedPatch.current = debounce(
-            () =>
-              patchAppData({
-                ...userAnswerAppData,
-                data: cachePayload.current,
-              }),
-            500,
-          );
+          patchCachedUserAnswer({
+            ...userAnswerAppData,
+            data: cachePayload.current,
+          });
         } else {
           postAppData(getDefaultUserAnswerAppData(payloadData));
         }
       },
-    [autosubmit, patchAppData, postAppData, userAnswerAppData],
+    [autosubmit, patchCachedUserAnswer, postAppData, userAnswerAppData],
   );
 
   const submitAnswer = useMemo(
