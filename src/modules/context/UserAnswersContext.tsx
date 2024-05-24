@@ -54,6 +54,7 @@ export const UserAnswersProvider: FC<{
     useState<UserAnswerAppData[]>();
 
   const cachePayload = useRef<UserAnswer>();
+  const debouncedPatch = useRef<ReturnType<typeof debounce>>();
   const { mutate: postAppData } = mutations.usePostAppData();
   const { mutate: patchAppData } = mutations.usePatchAppData();
   const { mutate: deleteAppData } = mutations.useDeleteAppData();
@@ -91,7 +92,7 @@ export const UserAnswersProvider: FC<{
         };
         if (userAnswerAppData?.id) {
           cachePayload.current = payloadData;
-          debounce(
+          debouncedPatch.current = debounce(
             () =>
               patchAppData({
                 ...userAnswerAppData,
