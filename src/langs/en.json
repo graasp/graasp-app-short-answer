@@ -40,7 +40,16 @@
     },
     "PLAYER": {
       "SAVED_MESSAGE": "Saved",
-      "SAVE_BUTTON": "Save"
+      "SAVE_BUTTON": "Save",
+      "SUBMIT_OK_TOOLTIP": "Your answer has been submitted.",
+      "SUBMIT_OK_HELPER": "Submitted",
+      "SAVED_TOOLTIP": "Your answer has been saved.",
+      "SAVED_HELPER": "Saved",
+      "RESET_ANSWER": "Reset your answer.",
+      "REQUIRED_CHIP": "Required",
+      "REQUIRED_TOOLTIP": "This question requires an answer.",
+      "SUBMIT": "Submit",
+      "RESET": "Reset"
     }
   }
 }
