@@ -110,7 +110,7 @@ const QuestionView = (): JSX.Element => {
           <Collapse orientation="horizontal" in={showResetButton}>
             <Tooltip title={t('RESET_ANSWER')}>
               <Button
-                disabled={answer.length === 0}
+                disabled={!userAnswer}
                 variant="outlined"
                 onClick={() => deleteAnswer()}
                 startIcon={<ReplayIcon />}
