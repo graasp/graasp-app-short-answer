@@ -38,7 +38,8 @@
         "AUTOSUBMIT_MORE_INFO": "If this option is not enabled, the users will have to click on a submit button to send his or her answer."
       }
     },
-    "PLAYER": {
+    "QUESTION_VIEW": {
+      "PLS_LOGIN_TO_SUBMIT": "To submit your answer, please login.",
       "SAVED_MESSAGE": "Saved",
       "SAVE_BUTTON": "Save",
       "SUBMIT_OK_TOOLTIP": "Your answer has been submitted.",
