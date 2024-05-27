@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.1.0](https://github.com/graasp/graasp-app-short-answer/compare/v1.0.5...v1.1.0) (2024-05-27)
+
+
+### Features
+
+* **settings:** add required and autosubmit settings ([6cf2b87](https://github.com/graasp/graasp-app-short-answer/commit/6cf2b87c945501fed51e2f55e5814367b1195c02))
+* show chips and submit/reset buttons ([62d4e1b](https://github.com/graasp/graasp-app-short-answer/commit/62d4e1bc6ef43e64e17a635dc1b6c26ec20c6ec7))
+
+
+### Bug Fixes
+
+* debounce save func for answer ([9a8d145](https://github.com/graasp/graasp-app-short-answer/commit/9a8d145673df7748248a9290c4e89b21816f11f5))
+* **deps:** update dependency @sentry/react to v7.116.0 ([0aab35c](https://github.com/graasp/graasp-app-short-answer/commit/0aab35c21093e0743729a785612c7e8e737e73d1))
+* **deps:** update dependency @sentry/react to v8 ([5598d1c](https://github.com/graasp/graasp-app-short-answer/commit/5598d1c8da8c3410e031e358239f56d75b4c7f00))
+* **deps:** update dependency react-i18next to v14 ([c785a1a](https://github.com/graasp/graasp-app-short-answer/commit/c785a1abbc93a5c59a1a433bb673a743abfbccf3))
+* **deps:** update dependency react-toastify to v10 ([668ab62](https://github.com/graasp/graasp-app-short-answer/commit/668ab62b2f9ecced8df0fb1019b5a42a34da2902))
+* **deps:** update react monorepo ([1b43ba2](https://github.com/graasp/graasp-app-short-answer/commit/1b43ba2a2c487e71cf8f893d8ab8a314984dc2f7))
+* keep ref to debounced func ([161ec85](https://github.com/graasp/graasp-app-short-answer/commit/161ec856759ee74067ff2a26e4f9eb1b6b7cca12))
+* use callback to debounce ([8d6976e](https://github.com/graasp/graasp-app-short-answer/commit/8d6976e5e338e8c1d7c0d052bdba8c88be174a59))
+
 ## [1.0.5](https://github.com/graasp/graasp-app-short-answer/compare/v1.0.4...v1.0.5) (2024-05-24)
 
 
