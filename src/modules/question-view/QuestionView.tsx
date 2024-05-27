@@ -1,4 +1,4 @@
-import { ChangeEvent, useEffect, useMemo, useState } from 'react';
+import { ChangeEvent, useCallback, useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import ReplayIcon from '@mui/icons-material/Replay';
@@ -10,6 +10,7 @@ import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import Tooltip from '@mui/material/Tooltip';
 
+import { useLocalContext } from '@graasp/apps-query-client';
 import {
   QuestionLabel,
   RequiredChip,
@@ -32,7 +33,8 @@ import { useSettings } from '@/modules/context/SettingsContext';
 import useUserAnswers from '../context/UserAnswersContext';
 
 const QuestionView = (): JSX.Element => {
-  const { t } = useTranslation('translations', { keyPrefix: 'PLAYER' });
+  const { t } = useTranslation('translations', { keyPrefix: 'QUESTION_VIEW' });
+  const { memberId } = useLocalContext();
   const { question, general } = useSettings();
   const { required } = general;
 
@@ -44,6 +46,11 @@ const QuestionView = (): JSX.Element => {
   } = useUserAnswers();
 
   const [answer, setAnswer] = useState<string>('');
+
+  const userAuthentified = useMemo(
+    () => typeof memberId === 'string' && memberId.length > 0,
+    [memberId],
+  );
 
   // Update the answer if the stored value change
   useEffect(() => {
@@ -63,8 +70,25 @@ const QuestionView = (): JSX.Element => {
   const handleAnswerChange = (e: ChangeEvent<HTMLInputElement>): void => {
     const newAns = e.target.value;
     setAnswer(newAns);
-    setSavedAnswer(newAns);
+    if (userAuthentified) {
+      setSavedAnswer(newAns);
+    }
   };
+
+  const getSubmitButton = useCallback(
+    (): JSX.Element => (
+      <Button
+        disabled={!userAnswer && userAuthentified}
+        variant="contained"
+        onClick={() => submitAnswer()}
+        startIcon={<SendIcon />}
+        data-cy={ANSWER_SUBMIT_BUTTON_CY}
+      >
+        {t('SUBMIT')}
+      </Button>
+    ),
+    [submitAnswer, t, userAnswer, userAuthentified],
+  );
 
   return (
     <Stack spacing={1} justifyContent="space-between" direction="row">
@@ -121,15 +145,7 @@ const QuestionView = (): JSX.Element => {
             </Tooltip>
           </Collapse>
           <Collapse orientation="horizontal" in={showSubmitButton}>
-            <Button
-              disabled={!userAnswer}
-              variant="contained"
-              onClick={() => submitAnswer()}
-              startIcon={<SendIcon />}
-              data-cy={ANSWER_SUBMIT_BUTTON_CY}
-            >
-              {t('SUBMIT')}
-            </Button>
+            {getSubmitButton()}
           </Collapse>
         </Stack>
       </Stack>
