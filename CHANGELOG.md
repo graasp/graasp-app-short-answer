@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/graasp/graasp-app-short-answer/compare/v1.1.0...v1.1.1) (2024-05-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @sentry/react to v8.5.0 ([e8c5c29](https://github.com/graasp/graasp-app-short-answer/commit/e8c5c29efb04f79903a15381fb32d8f9ce4ac84c))
+
 ## [1.1.0](https://github.com/graasp/graasp-app-short-answer/compare/v1.0.5...v1.1.0) (2024-05-27)
 
 
