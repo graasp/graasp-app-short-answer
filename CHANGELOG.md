@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.3](https://github.com/graasp/graasp-app-short-answer/compare/v1.1.2...v1.1.3) (2024-06-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @graasp/sdk to v4.12.1 ([870b93a](https://github.com/graasp/graasp-app-short-answer/commit/870b93a85d23e3c583a61a2d4bb119555d3b01de))
+* **deps:** update dependency @sentry/react to v8.9.2 ([371584a](https://github.com/graasp/graasp-app-short-answer/commit/371584a63611cecfd76e440dfd254b273cd41dbe))
+* **deps:** update dependency @types/node to v20.14.0 ([6acb6b0](https://github.com/graasp/graasp-app-short-answer/commit/6acb6b0d6a79e73d49fe5e53c3e982fd8c5b44ee))
+* **deps:** update dependency @types/node to v20.14.2 ([f801a8b](https://github.com/graasp/graasp-app-short-answer/commit/f801a8b945d99d0c59b31a4b0346ca4e11905cf0))
+* **deps:** update graasp packages ([77f8735](https://github.com/graasp/graasp-app-short-answer/commit/77f87350172f51518f36ca06e8005b20db278a14))
+* **deps:** update mui (non-major) to v5.15.20 ([940c459](https://github.com/graasp/graasp-app-short-answer/commit/940c459be43c5743d2de22c1b399c033bd5ebce3))
+
 ## [1.1.2](https://github.com/graasp/graasp-app-short-answer/compare/v1.1.1...v1.1.2) (2024-05-31)
 
 
