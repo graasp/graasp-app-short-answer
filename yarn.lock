@@ -4573,9 +4573,11 @@ __metadata:
   linkType: hard
 
 "acorn-walk@npm:^8.3.2":
-  version: 8.3.2
-  resolution: "acorn-walk@npm:8.3.2"
-  checksum: 10/57dbe2fd8cf744f562431775741c5c087196cd7a65ce4ccb3f3981cdfad25cd24ad2bad404997b88464ac01e789a0a61e5e355b2a84876f13deef39fb39686ca
+  version: 8.3.3
+  resolution: "acorn-walk@npm:8.3.3"
+  dependencies:
+    acorn: "npm:^8.11.0"
+  checksum: 10/59701dcb7070679622ba8e9c7f37577b4935565747ca0fd7c1c3ad30b3f1b1b008276282664e323b5495eb49f77fa12d3816fd06dc68e18f90fbebe759f71450
   languageName: node
   linkType: hard
 
@@ -4588,12 +4590,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"acorn@npm:^8.11.3, acorn@npm:^8.9.0":
-  version: 8.11.3
-  resolution: "acorn@npm:8.11.3"
+"acorn@npm:^8.11.0, acorn@npm:^8.11.3, acorn@npm:^8.9.0":
+  version: 8.12.0
+  resolution: "acorn@npm:8.12.0"
   bin:
     acorn: bin/acorn
-  checksum: 10/b688e7e3c64d9bfb17b596e1b35e4da9d50553713b3b3630cf5690f2b023a84eac90c56851e6912b483fe60e8b4ea28b254c07e92f17ef83d72d78745a8352dd
+  checksum: 10/550cc5033184eb98f7fbe2e9ddadd0f47f065734cc682f25db7a244f52314eb816801b64dec7174effd978045bd1754892731a90b1102b0ede9d17a15cfde138
   languageName: node
   linkType: hard
 
@@ -5353,9 +5355,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001629":
-  version: 1.0.30001633
-  resolution: "caniuse-lite@npm:1.0.30001633"
-  checksum: 10/014f2a5645598c8a19b12051afaa6443f8d39c6041e89d70a0497f7c7052f152049192b639aa69a190fa239f8af12ddab719483a8b871f275c507f48aa9a0519
+  version: 1.0.30001636
+  resolution: "caniuse-lite@npm:1.0.30001636"
+  checksum: 10/9e6c5ab4c20df31df36720dda77cf6a781549ac2ad844bc0a416b327a793da21486358a1f85fdd6c39e22d336f70aac3b0e232f5f228cdff0ceb6e3e1c5e98fd
   languageName: node
   linkType: hard
 
@@ -6271,9 +6273,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.796":
-  version: 1.4.802
-  resolution: "electron-to-chromium@npm:1.4.802"
-  checksum: 10/cb4cfff8dd7ae9bdf4684e4c140c85d61a233000c6f006b3504faa9c2c246001f50792f86f7802f9bfeebf3d8ef641774588b252100f1f3f2a17cf30ed276f48
+  version: 1.4.803
+  resolution: "electron-to-chromium@npm:1.4.803"
+  checksum: 10/1a78ea25b04db91863398dde1f1e5f002bcd46e98188b8311aa3826d98166fcb69b87d39f78057740a3088b8484f65b8193bc80b6f53cab075672195635bbb73
   languageName: node
   linkType: hard
 
@@ -7607,12 +7609,12 @@ __metadata:
   linkType: hard
 
 "foreground-child@npm:^3.1.0":
-  version: 3.2.0
-  resolution: "foreground-child@npm:3.2.0"
+  version: 3.2.1
+  resolution: "foreground-child@npm:3.2.1"
   dependencies:
     cross-spawn: "npm:^7.0.0"
     signal-exit: "npm:^4.0.1"
-  checksum: 10/27ce41b692e006f525b6a7146d0b4190979d2f382c20014a966b47ca549ab16f93dffbd2f95a32e83172d24bc374c38b7760023e1af74f8652bf34c42270fd28
+  checksum: 10/77b33b3c438a499201727ca84de39a66350ccd54a8805df712773e963cefb5c4632dbc4386109e97a0df8fb1585aee95fa35acb07587e3e04cfacabfc0ae15dc
   languageName: node
   linkType: hard
 
@@ -12842,7 +12844,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:5.3.1":
+"vite@npm:5.3.1, vite@npm:^5.0.0":
   version: 5.3.1
   resolution: "vite@npm:5.3.1"
   dependencies:
@@ -12879,46 +12881,6 @@ __metadata:
   bin:
     vite: bin/vite.js
   checksum: 10/180ca1795389f1ebc0b09f2ce61846943d34df597c4719e68d1d5ecba3e6cbd5b3313a4a321119b18290de3ef543df433659ba8b678de84df152e0386342697f
-  languageName: node
-  linkType: hard
-
-"vite@npm:^5.0.0":
-  version: 5.3.0
-  resolution: "vite@npm:5.3.0"
-  dependencies:
-    esbuild: "npm:^0.21.3"
-    fsevents: "npm:~2.3.3"
-    postcss: "npm:^8.4.38"
-    rollup: "npm:^4.13.0"
-  peerDependencies:
-    "@types/node": ^18.0.0 || >=20.0.0
-    less: "*"
-    lightningcss: ^1.21.0
-    sass: "*"
-    stylus: "*"
-    sugarss: "*"
-    terser: ^5.4.0
-  dependenciesMeta:
-    fsevents:
-      optional: true
-  peerDependenciesMeta:
-    "@types/node":
-      optional: true
-    less:
-      optional: true
-    lightningcss:
-      optional: true
-    sass:
-      optional: true
-    stylus:
-      optional: true
-    sugarss:
-      optional: true
-    terser:
-      optional: true
-  bin:
-    vite: bin/vite.js
-  checksum: 10/0278f286fc38427328a2f33de4d2ab5c96c683948872790c2ba8e67d362a3464b8ff59de2e433f5cdebf1a9bee899e05ad7a65b7f4fd31da931a8b08fa1746d3
   languageName: node
   linkType: hard
 
