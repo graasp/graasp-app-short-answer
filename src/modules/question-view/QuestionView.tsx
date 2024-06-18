@@ -43,6 +43,7 @@ const QuestionView = (): JSX.Element => {
     deleteAnswer,
     submitAnswer,
     setAnswer: setSavedAnswer,
+    status,
   } = useUserAnswers();
 
   const [answer, setAnswer] = useState<string>('');
@@ -55,11 +56,11 @@ const QuestionView = (): JSX.Element => {
 
   // Update the answer if the stored value change
   useEffect(() => {
-    if (!isInit) {
+    if (!isInit && status === 'success' && answer.length === 0) {
       setAnswer(userAnswer?.answer ?? '');
       setIsInit(true);
     }
-  }, [isInit, userAnswer]);
+  }, [answer.length, isInit, status, userAnswer]);
   const answerStatus = useMemo(() => userAnswer?.status, [userAnswer?.status]);
 
   const showSubmitButton = useMemo(
