@@ -56,7 +56,12 @@ const QuestionView = (): JSX.Element => {
 
   // Update the answer if the stored value change
   useEffect(() => {
-    if (status === 'success' && answer.length === 0 && !isInit) {
+    if (
+      status === 'success' &&
+      answer.length === 0 &&
+      !isInit &&
+      typeof userAnswer !== 'undefined'
+    ) {
       setAnswer(userAnswer?.answer ?? '');
       setIsInit(true);
     }
