@@ -46,6 +46,7 @@ const QuestionView = (): JSX.Element => {
   } = useUserAnswers();
 
   const [answer, setAnswer] = useState<string>('');
+  const [isInit, setIsInit] = useState<boolean>(false);
 
   const userAuthentified = useMemo(
     () => typeof memberId === 'string' && memberId.length > 0,
@@ -54,8 +55,11 @@ const QuestionView = (): JSX.Element => {
 
   // Update the answer if the stored value change
   useEffect(() => {
-    setAnswer(userAnswer?.answer ?? '');
-  }, [userAnswer]);
+    if (!isInit) {
+      setAnswer(userAnswer?.answer ?? '');
+      setIsInit(true);
+    }
+  }, [isInit, userAnswer]);
   const answerStatus = useMemo(() => userAnswer?.status, [userAnswer?.status]);
 
   const showSubmitButton = useMemo(
