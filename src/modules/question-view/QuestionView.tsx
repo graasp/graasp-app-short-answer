@@ -146,7 +146,10 @@ const QuestionView = (): JSX.Element => {
               <Button
                 disabled={!userAnswer}
                 variant="outlined"
-                onClick={() => deleteAnswer()}
+                onClick={() => {
+                  setAnswer('');
+                  deleteAnswer();
+                }}
                 startIcon={<ReplayIcon />}
                 data-cy={RESET_BTN_CY}
               >
