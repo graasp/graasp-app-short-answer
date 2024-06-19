@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.1.4](https://github.com/graasp/graasp-app-short-answer/compare/v1.1.3...v1.1.4) (2024-06-19)
+
+
+### Bug Fixes
+
+* check backend data is defined ([b46690d](https://github.com/graasp/graasp-app-short-answer/commit/b46690d63e2383a70535603fa9298daa1a8a8d13))
+* **deps:** update dependency @graasp/sdk to v4.13.0 ([37792ca](https://github.com/graasp/graasp-app-short-answer/commit/37792cad61b9f3c6388727fe40508ca664a234e2))
+* **deps:** update dependency @sentry/react to v8.10.0 ([5843350](https://github.com/graasp/graasp-app-short-answer/commit/5843350ee7b23915ce567f0fc4d1de3168e984de))
+* **deps:** update dependency @types/node to v20.14.4 ([d18131c](https://github.com/graasp/graasp-app-short-answer/commit/d18131cd45eeec75fa3e69728d36d9e746b3fef9))
+* **deps:** update dependency @types/node to v20.14.5 ([#142](https://github.com/graasp/graasp-app-short-answer/issues/142)) ([65a8300](https://github.com/graasp/graasp-app-short-answer/commit/65a8300912964a44e00eb6036cdf3de7a821fb0a))
+* reset text field when resetting answer ([ad2b92c](https://github.com/graasp/graasp-app-short-answer/commit/ad2b92c55d387e8dcf916022f8e42a4142ea90e2))
+* update local state only at initialization ([febf8ba](https://github.com/graasp/graasp-app-short-answer/commit/febf8ba1335adfb07db8bebcec96b46c71c21c78))
+* use init flag ([c2639d4](https://github.com/graasp/graasp-app-short-answer/commit/c2639d4599f2a607ebba4dc231a0bc4386f8dff7))
+* use only emptiness of answer to assess if previous state was filled ([303763f](https://github.com/graasp/graasp-app-short-answer/commit/303763f63e2b36c48b11d7765132a9633220b5f1))
+* use query status to update ([329a10d](https://github.com/graasp/graasp-app-short-answer/commit/329a10d30de1cc0a7c58b3bf3ead0e4c037d64f8))
+
 ## [1.1.3](https://github.com/graasp/graasp-app-short-answer/compare/v1.1.2...v1.1.3) (2024-06-13)
 
 
