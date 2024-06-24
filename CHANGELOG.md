@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1.5](https://github.com/graasp/graasp-app-short-answer/compare/v1.1.4...v1.1.5) (2024-06-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @graasp/sdk to v4.14.1 ([d2cb701](https://github.com/graasp/graasp-app-short-answer/commit/d2cb701f4af866fed3c8d4b2671facfb19511685))
+* **deps:** update dependency @sentry/react to v8.11.0 ([984d3d0](https://github.com/graasp/graasp-app-short-answer/commit/984d3d0021224ff475586bba6eb742a4b9f898cc))
+* **deps:** update dependency @types/node to v20.14.8 ([68a12b7](https://github.com/graasp/graasp-app-short-answer/commit/68a12b7d90da2c0b5eff7385e81dda3aec0488ce))
+* **deps:** update dependency typescript to v5.5.2 ([40d3d75](https://github.com/graasp/graasp-app-short-answer/commit/40d3d75eee5f7e37626297d87e443ff4ca527c2d))
+
 ## [1.1.4](https://github.com/graasp/graasp-app-short-answer/compare/v1.1.3...v1.1.4) (2024-06-19)
 
 
