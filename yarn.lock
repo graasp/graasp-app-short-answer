@@ -4005,12 +4005,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:20.14.8":
+"@types/node@npm:*":
   version: 20.14.8
   resolution: "@types/node@npm:20.14.8"
   dependencies:
     undici-types: "npm:~5.26.4"
   checksum: 10/73822f66f269ce865df7e2f586787ac7444bd1169fd265cbed1e851b72787f1170517c5b616e0308ec2fbc0934ec6403b0f28d4152acbb0486071aec41167d51
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:20.14.15":
+  version: 20.14.15
+  resolution: "@types/node@npm:20.14.15"
+  dependencies:
+    undici-types: "npm:~5.26.4"
+  checksum: 10/87a4a4313e886c1db1c8042004956095477e040f67df993fd16a2d50488c750bda81e85bf702c2e629e964605034e8dfe0cb91b65ce22b6b8eec37ece61c6b6c
   languageName: node
   linkType: hard
 
@@ -8080,7 +8089,7 @@ __metadata:
     "@types/lodash.isequal": "npm:^4"
     "@types/lodash.sortby": "npm:^4"
     "@types/lodash.uniqby": "npm:^4"
-    "@types/node": "npm:20.14.8"
+    "@types/node": "npm:20.14.15"
     "@types/react-dom": "npm:18.3.0"
     "@types/uuid": "npm:10.0.0"
     "@typescript-eslint/eslint-plugin": "npm:6.21.0"
