@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.1.6](https://github.com/graasp/graasp-app-short-answer/compare/v1.1.5...v1.1.6) (2024-09-27)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @mui/lab to v5.0.0-alpha.173 ([9eb7e99](https://github.com/graasp/graasp-app-short-answer/commit/9eb7e9983166ec186f47d7993893c9749e2ab1ba))
+* **deps:** update dependency @sentry/react to v8.32.0 ([8df8899](https://github.com/graasp/graasp-app-short-answer/commit/8df8899c5ffef68c7ed5b23d7229fc826ab98054))
+* **deps:** update dependency @types/node to v20.14.15 ([b77c30d](https://github.com/graasp/graasp-app-short-answer/commit/b77c30d7c9bb02af8822d7ae0fdb07aedbaa9b36))
+* **deps:** update dependency @types/node to v20.16.9 ([3668f91](https://github.com/graasp/graasp-app-short-answer/commit/3668f910e8da85472d0b2a5bf4269ab3d005cfc4))
+* **deps:** update dependency i18next to v23.15.1 ([ae8ef54](https://github.com/graasp/graasp-app-short-answer/commit/ae8ef5473496ef38e9e4798ab18c5f5d12cd6617))
+* **deps:** update dependency react-i18next to v14.1.3 ([69ea537](https://github.com/graasp/graasp-app-short-answer/commit/69ea537668f3c1f6d0c6be112a76b31e6f003fa9))
+* **deps:** update dependency typescript to v5.5.4 ([a642a47](https://github.com/graasp/graasp-app-short-answer/commit/a642a475cf1331b4a6f9da7f6928473f463ab979))
+* **deps:** update dependency typescript to v5.6.2 ([a69681d](https://github.com/graasp/graasp-app-short-answer/commit/a69681d37915ded350c42c508079cc78fd50cd84))
+* **deps:** update mui (non-major) to v5.16.7 ([e48f53e](https://github.com/graasp/graasp-app-short-answer/commit/e48f53e081c21fc8bc06db1c56af6a197f0a4692))
+
 ## [1.1.5](https://github.com/graasp/graasp-app-short-answer/compare/v1.1.4...v1.1.5) (2024-06-24)
 
 
