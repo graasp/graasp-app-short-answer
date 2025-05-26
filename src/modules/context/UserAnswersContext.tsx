@@ -80,7 +80,7 @@ export const UserAnswersProvider: FC<{
       setUserAnswerAppData(
         sortBy(allAns, ['createdAt'])
           .reverse()
-          .find((d) => d.member.id === memberId),
+          .find((d) => d.account.id === memberId),
       );
     }
   }, [isSuccess, data, memberId]);
