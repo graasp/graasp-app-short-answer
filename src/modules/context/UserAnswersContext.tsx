@@ -62,7 +62,7 @@ export const UserAnswersProvider: FC<{
   const { mutate: postAppData } = mutations.usePostAppData();
   const { mutate: patchAppData } = mutations.usePatchAppData();
   const { mutate: deleteAppData } = mutations.useDeleteAppData();
-  const { permission, memberId } = useLocalContext();
+  const { permission, accountId } = useLocalContext();
 
   const { general } = useSettings();
   const { autosubmit } = general;
@@ -80,10 +80,10 @@ export const UserAnswersProvider: FC<{
       setUserAnswerAppData(
         sortBy(allAns, ['createdAt'])
           .reverse()
-          .find((d) => d.account.id === memberId),
+          .find((d) => d.account.id === accountId),
       );
     }
-  }, [isSuccess, data, memberId]);
+  }, [isSuccess, data, accountId]);
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const patchCachedUserAnswer = useCallback(
