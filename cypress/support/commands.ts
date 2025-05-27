@@ -27,6 +27,7 @@ Cypress.Commands.add('setUpApi', (database, appContext) => {
     // eslint-disable-next-line no-param-reassign
     win.appContext = {
       memberId: CURRENT_MEMBER.id,
+      accountId: CURRENT_MEMBER.id,
       itemId: MOCK_SERVER_ITEM.id,
       apiHost: Cypress.env('VITE_API_HOST'),
       ...appContext,

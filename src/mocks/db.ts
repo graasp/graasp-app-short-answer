@@ -43,6 +43,7 @@ export const defaultMockContext: LocalContext = {
   context: Context.Builder,
   itemId: mockItem.id,
   memberId: mockMembers[0].id,
+  accountId: mockMembers[0].id,
 };
 
 const buildDatabase = (members?: CompleteMember[]): Database => ({
