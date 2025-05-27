@@ -26,7 +26,7 @@ describe('player view as anonymous', () => {
       },
       {
         context: Context.Player,
-        memberId: undefined,
+        accountId: undefined,
       },
     );
     cy.visit(`/`);

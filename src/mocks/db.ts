@@ -42,7 +42,6 @@ export const defaultMockContext: LocalContext = {
   permission: PermissionLevel.Admin,
   context: Context.Builder,
   itemId: mockItem.id,
-  memberId: mockMembers[0].id,
   accountId: mockMembers[0].id,
 };
 

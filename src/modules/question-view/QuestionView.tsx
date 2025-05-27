@@ -34,7 +34,7 @@ import useUserAnswers from '../context/UserAnswersContext';
 
 const QuestionView = (): JSX.Element => {
   const { t } = useTranslation('translations', { keyPrefix: 'QUESTION_VIEW' });
-  const { memberId } = useLocalContext();
+  const { accountId } = useLocalContext();
   const { question, general } = useSettings();
   const { required } = general;
 
@@ -50,8 +50,8 @@ const QuestionView = (): JSX.Element => {
   const [isInit, setIsInit] = useState<boolean>(false);
 
   const userAuthentified = useMemo(
-    () => typeof memberId === 'string' && memberId.length > 0,
-    [memberId],
+    () => typeof accountId === 'string' && accountId.length > 0,
+    [accountId],
   );
 
   // Update the answer if the stored value change
