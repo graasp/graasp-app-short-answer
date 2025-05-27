@@ -16,7 +16,7 @@ export const USER_ANSWER_4 = 'Incorrect';
 export const ANSWER_1: AppData = {
   id: '0',
   creator: MEMBERS.ANNA,
-  member: MEMBERS.ANNA,
+  account: MEMBERS.ANNA,
   type: AppDataType.UserAnswer,
   data: {
     answer: USER_ANSWER_1,
@@ -30,7 +30,7 @@ export const ANSWER_1: AppData = {
 export const ANSWER_2: AppData = {
   id: '1',
   creator: MEMBERS.ANNA,
-  member: MEMBERS.ANNA,
+  account: MEMBERS.ANNA,
   type: AppDataType.UserAnswer,
   data: {
     answer: USER_ANSWER_2,
@@ -44,7 +44,7 @@ export const ANSWER_2: AppData = {
 export const ANSWER_3: AppData = {
   id: '2',
   creator: MEMBERS.BOB,
-  member: MEMBERS.BOB,
+  account: MEMBERS.BOB,
   type: AppDataType.UserAnswer,
   data: {
     answer: USER_ANSWER_3,
@@ -58,7 +58,7 @@ export const ANSWER_3: AppData = {
 export const ANSWER_4: AppData = {
   id: '3',
   creator: MEMBERS.CHARLIE,
-  member: MEMBERS.CHARLIE,
+  account: MEMBERS.CHARLIE,
   type: AppDataType.UserAnswer,
   data: {
     answer: USER_ANSWER_4,
