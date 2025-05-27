@@ -4062,12 +4062,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:20.16.9":
-  version: 20.16.9
-  resolution: "@types/node@npm:20.16.9"
+"@types/node@npm:20.16.15":
+  version: 20.16.15
+  resolution: "@types/node@npm:20.16.15"
   dependencies:
     undici-types: "npm:~6.19.2"
-  checksum: 10/cc7e57775ce80348f72a7026910ee0082bf3e0f5af33b3cdc3ce10df64e51bb70b0e8ce4726ecf53cc9c4ba239d340d76831de38ecc7e317e41fb71f793b6e93
+  checksum: 10/f4706676fdff05c7fb188399da578bbcce9260f889cfd767f1c3ee4fb33c369eb1ffa24161651ea3ef5b6a33e2e9b66f393949cab2be77d019277a1e16a7af36
   languageName: node
   linkType: hard
 
@@ -8114,7 +8114,7 @@ __metadata:
     "@types/lodash.isequal": "npm:^4"
     "@types/lodash.sortby": "npm:^4"
     "@types/lodash.uniqby": "npm:^4"
-    "@types/node": "npm:20.16.9"
+    "@types/node": "npm:20.16.15"
     "@types/react-dom": "npm:18.3.0"
     "@types/uuid": "npm:10.0.0"
     "@typescript-eslint/eslint-plugin": "npm:6.21.0"
