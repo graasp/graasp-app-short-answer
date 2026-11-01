@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.7](https://github.com/graasp/graasp-app-short-answer/compare/v1.1.6...v1.1.7) (2026-11-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @emotion/styled to v11.14.1 ([3d0fc09](https://github.com/graasp/graasp-app-short-answer/commit/3d0fc091b77056f08d10981ec9ac13d34aa12310))
+* **deps:** update mui (non-major) ([18f0bf6](https://github.com/graasp/graasp-app-short-answer/commit/18f0bf6acf31a0093f4c0b720cc0a07d276ee9a9))
+
 ## [1.1.6](https://github.com/graasp/graasp-app-short-answer/compare/v1.1.5...v1.1.6) (2025-05-27)
 
 
